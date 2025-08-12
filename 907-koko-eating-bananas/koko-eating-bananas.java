@@ -5,6 +5,9 @@ class Solution {
         for(int n : piles){
             j = Math.max(j, n);
         }
+        if(h==piles.length){
+            return j;
+        }
             while(i<=j){
                 int k = i+(j-i)/2;
                 long c=0;
